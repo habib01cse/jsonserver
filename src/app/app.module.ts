@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { OrdersModule } from './orders/orders.module';
+import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
 
 @NgModule({
@@ -14,7 +17,9 @@ import { OrdersModule } from './orders/orders.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OrdersModule
+    HttpClientModule,
+    OrdersModule,
+    SiteFrameworkModule
   ],
   providers: [],
   bootstrap: [AppComponent]

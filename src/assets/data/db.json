@@ -2,10 +2,10 @@
     "products": [
       {
         "id": 1,
-        "name": "json-server", 
-        "category_id": 2, 
-        "description": "typicode", 
-        "product_img": "img_path",
+        "productName": "Tsharts-1.1", 
+        "categoryId": 1, 
+        "description": "Allen Solly Men's Polo", 
+        "productImg": "http://localhost:4200/assets/products/1.jpg",
         "price": 100, 
         "is_visible": true, 
         "rating": 4, 
@@ -15,16 +15,82 @@
       },
       {
         "id": 2,
-        "name": "Headphone -2", 
-        "category_id": 3, 
-        "description": "typicode", 
-        "product_img": "img_path",
+        "productName": "Tsharts-1.2", 
+        "categoryId": 1, 
+        "description": "MAX Men's Solid Slim Fit Polo", 
+        "productImg": "http://localhost:4200/assets/products/2.jpg",
+        "price": 40, 
+        "is_visible": true, 
+        "rating": 4, 
+        "reviews": 30, 
+        "vendor_name": "Seller -1.3",
+        "warranty": 2
+      },
+      {
+        "id": 3,
+        "productName": "Tsharts-1.3", 
+        "categoryId": 1, 
+        "description": "MAX Men's Solid Slim Fit Polo", 
+        "productImg": "http://localhost:4200/assets/products/3.jpg",
         "price": 40, 
         "is_visible": true, 
         "rating": 4, 
         "reviews": 30, 
         "vendor_name": "Seller -1",
         "warranty": 2
+      },
+      {
+        "id": 4,
+        "productName": "Tsharts-2.1", 
+        "categoryId": 2, 
+        "description": "MAX Men's Solid Slim Fit Polo", 
+        "productImg": "http://localhost:4200/assets/products/4.jpg",
+        "price": 40, 
+        "is_visible": true, 
+        "rating": 4, 
+        "reviews": 30, 
+        "vendor_name": "Seller -1",
+        "warranty": 2
+      },
+      {
+        "id": 5,
+        "productName": "Tsharts-2.2", 
+        "categoryId": 2, 
+        "description": "MAX Men's Solid Slim Fit Polo", 
+        "productImg": "http://localhost:4200/assets/products/5.jpg",
+        "price": 40, 
+        "is_visible": true, 
+        "rating": 4, 
+        "reviews": 30, 
+        "vendor_name": "Seller -1",
+        "warranty": 2
+      },
+      {
+        "id": 6,
+        "productName": "Tsharts-3.1", 
+        "categoryId": 3, 
+        "description": "MAX Men's Solid Slim Fit Polo", 
+        "productImg": "http://localhost:4200/assets/products/6.jpg",
+        "price": 40, 
+        "is_visible": true, 
+        "rating": 4, 
+        "reviews": 30, 
+        "vendor_name": "Seller -1",
+        "warranty": 2
+      }
+    ],
+    "categories":[
+      {
+        "id": 1,
+        "categoryName": "Polo Tshirts"
+      },
+      {
+        "id": 2,
+        "categoryName": "Soccer Tshirts"
+      },
+      {
+        "id": 3,
+        "categoryName": "Casuat Tshirts"
       }
     ],
     "comments": [

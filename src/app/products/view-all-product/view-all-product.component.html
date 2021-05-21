@@ -1,0 +1,15 @@
+
+<div class="row">
+    <div class="col-lg-4 col-md-6 mb-4" *ngFor="let produtc of productList">
+        <div class="card h-100">
+            <a href="#!"><img class="card-img-top" src="{{ produtc.productImg }}" alt="..." /></a>
+            <div class="card-body">
+                <h4 class="card-title"><a routerLink="product/{{produtc.id}}">{{ produtc.productName }}</a></h4>
+                <h5>$ {{ produtc.price }}</h5>
+                <p class="card-text">{{ produtc.description }}</p>
+            </div>
+            <div class="card-footer"><small class="text-muted"> {{ produtc.rating }} </small></div>            
+        </div>
+    </div>
+    
+</div>
