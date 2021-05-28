@@ -10,6 +10,7 @@ export class Product{
     color: string;
     reviews: number;
 
+    
     constructor(options: any = {}){
         this.productId = options.productId || '' ;
         this.categoryId = options.categoryId || null;

@@ -10,7 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { OrdersModule } from './orders/orders.module';
 import { SiteFrameworkModule } from './site-framework/site-framework.module';
 
-
 @NgModule({
   declarations: [
     AppComponent
