@@ -2,6 +2,8 @@
     <img class="card-img-top img-thumbnail" style="width:300px" src="{{ productDtl.productImg }}" alt="..." />
     <div class="card-body">
         <h3 class="card-title">{{ productDtl.productName }}</h3>
+        <a href="products/update-product/{{productDtl.productId}}">Update Product</a> | 
+        <a href="products/delete-product/{{productDtl.productId}}">Detelte Product</a>
         <h4>${{ productDtl.price }}</h4>
         <p class="card-text">{{ productDtl.description }}</p>
         <span class="text-warning">{{ productDtl.rating }}</span>        

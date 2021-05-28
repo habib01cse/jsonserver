@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product';
+import { Product  as productModel } from '../product.model';
 import { ProductsService } from '../products.service';
 
 @Component({
@@ -11,7 +12,8 @@ import { ProductsService } from '../products.service';
 export class ViewProductComponent implements OnInit {
 
   productId = 0;
-  productDtl: Product;
+  //productDtl: Product;
+  public productDtl = new productModel();
   constructor(private activatedRoute: ActivatedRoute
     , private productService: ProductsService) { }
 
@@ -22,8 +24,8 @@ export class ViewProductComponent implements OnInit {
     });
 
 
-    this.productService.viewProduct(this.productId).subscribe(productData =>{
-      this.productDtl = productData;  
+    this.productService.viewProduct(this.productId).subscribe(productData =>{       
+      this.productDtl = new productModel( productData );  
       console.log('this.productDtl', this.productDtl );
     });
 

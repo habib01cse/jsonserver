@@ -30,17 +30,17 @@ export class ProductsService {
   }
 
   updateProduct(productId, productBody): Observable<Product>{
-    const productUrl = 'http://localhost:3000/product'+productId;
+    const productUrl = 'http://localhost:3000/products/'+productId;
     return this.httpClient.put<Product>(productUrl, productBody) // return observable
   }
 
   viewProduct(productId): Observable<Product>{
-    const productUrl = 'http://localhost:3000/productS/'+productId;
+    const productUrl = 'http://localhost:3000/products/'+productId;
     return this.httpClient.get<Product>(productUrl) // return observable
   }
 
   deleteProduct(productId): Observable<Product>{
-    const productUrl = 'http://localhost:3000/product'+productId;
+    const productUrl = 'http://localhost:3000/products/'+productId;
     return this.httpClient.delete<Product>(productUrl) // return observable
   }
 
